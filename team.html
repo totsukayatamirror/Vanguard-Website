@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanguard FC: Players</title>
+    <style>
+        :root {
+            --black: #111111;
+            --gold: #D4AF37;
+            --white: #FFFFFF;
+        }
+        
+        body {
+            font-family: 'Comic Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--black);
+            color: var(--white);
+        }
+
+        header {
+            background-color: var(--black);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: var(--gold);
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--white);
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        h1 {
+            color: var(--gold);
+            text-align: center;
+        }
+
+        .player-card {
+            background-color: var(--white);
+            color: var(--black);
+            border: 2px solid var(--gold);
+            border-radius: 10px;
+            padding: 1rem;
+            margin: 1rem;
+            text-align: center;
+            display: inline-block;
+            width: 200px;
+        }
+
+        .player-card img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .player-card h2 {
+            font-size: 1.5rem;
+            margin: 0.5rem 0;
+        }
+
+        .player-card p {
+            margin: 0.5rem 0;
+        }
+
+        footer {
+            background-color: var(--black);
+            color: var(--white);
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="matches.html">Matches</a></li>
+                <li><a href="tickets.html">Tickets</a></li>
+                <li><a href="shop.html">Shop</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Meet the Players</h1>
+        <div class="player-card">
+            <img src="path_to_player_image1.jpg" alt="Player 1 Headshot">
+            <h2>Player 1</h2>
+            <p>Position: Forward</p>
+        </div>
+        <div class="player-card">
+            <img src="path_to_player_image2.jpg" alt="Player 2 Headshot">
+            <h2>Player 2</h2>
+            <p>Position: Midfielder</p>
+        </div>
+        <div class="player-card">
+            <img src="path_to_player_image3.jpg" alt="Player 3 Headshot">
+            <h2>Player 3</h2>
+            <p>Position: Defender</p>
+        </div>
+        <div class="player-card">
+            <img src="path_to_player_image4.jpg" alt="Player 4 Headshot">
+            <h2>Player 4</h2>
+            <p>Position: Goalkeeper</p>
+        </div>
+        <!-- Add more player cards as needed -->
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Vanguard FC. All rights reserved.</p>
+    </footer>
+</body>
+</html>
